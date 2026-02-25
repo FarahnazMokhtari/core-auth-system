@@ -10,9 +10,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // ============================
+        // =======================================
         // 1️⃣ ساخت سرویس و repository
-        // ============================
+        // =======================================
         AuthService authService = new AuthService(new InMemoryUserRepository());
         Scanner scanner = new Scanner(System.in);
 
