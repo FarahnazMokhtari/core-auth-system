@@ -11,11 +11,13 @@ public class InMemoryUserRepository implements UserRepository {
 
     @Override
     public Optional<User> findByEmail(String email) {
+
         return Optional.ofNullable(storage.get(email));
     }
 
     @Override
     public void save(User user) {
+
         storage.put(user.getEmail(), user);
     }
 }
